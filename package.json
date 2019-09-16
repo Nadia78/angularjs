@@ -1,0 +1,19 @@
+{
+  "name": "Capgemini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "angular": "^1.7.8",
+    "bootstrap": "^4.3.1",
+    "lite-server": "^2.5.4"
+  }
+}
