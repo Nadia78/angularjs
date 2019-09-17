@@ -4,6 +4,10 @@
 
     angular.module('app-root')
 
+        .controller('MainController', ['$scope', function ($scope) {
+            $scope.title = 'AngularJS';
+        }])
+
         .controller('ChuckNorrisController', ['$scope', '$http', function ($scope, $http) {
             $scope.title = 'Chuck Norris citation';
 
@@ -22,10 +26,6 @@
                         }
                     );
             }, 4000);
-        }])
-        
-        .controller('MainController', ['$scope', function ($scope) {
-            $scope.title = 'AngularJS';
         }])
 
         .controller('TodoController', ['$scope', function ($scope) {
