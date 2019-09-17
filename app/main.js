@@ -1,11 +1,23 @@
 (function () {
-    angular.module('app-root', [])
+    angular.module('app-root', ['ngRoute'])
 
-        .controller('MainController', ['$scope', '$rootScope', '$http', function ($scope, $rootScope, $http) {
+        .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+            $locationProvider.html5Mode(true);
+
+            $routeProvider
+                .when('/', {
+                    controller: 'MainController',
+                    templateUrl: 'app/views/home.html'
+                })
+
+                .when('/todo', {
+                    controller: 'TodoController',
+                    templateUrl: 'app/views/todo.html'
+                });
+        }])
+
+        .controller('MainController', ['$scope', '$http', function ($scope, $http) {
             $scope.title = 'AngularJS';
-
-            $rootScope.name = 'foo';
-            $rootScope.user = { name: 'bar' };
 
             setInterval(function () {
                 $http.get('https://api.chucknorris.io/jokes/random')
@@ -22,10 +34,6 @@
                         }
                     );
             }, 5000);
-
-        }])
-
-        .controller('SecondController', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
         }])
 
