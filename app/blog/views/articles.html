@@ -1,4 +1,18 @@
 <h1>{{ title }}</h1>
 
-{{ articles | json }}
+<div class="p-3">
+    <input class="form-control" ng-model="search" type="text" placeholder="Tapez votre recherche...">
+</div>
 
+<!-- ng-show="search" -->
+<div class="card-columns">
+    <div class="card" ng-repeat="article in articles | filter:search | orderBy:'-title'">
+        <div class="card-body">
+            <h5 class="card-title">{{ article.title | uppercase }}</h5>
+            <p class="card-text">{{ article.content | truncate:100 }}</p>
+            <p class="card-text">
+                <small class="text-muted">{{ article.date | date:'d/m/yyyy' }}</small>
+            </p>
+        </div>
+    </div>
+</div>
