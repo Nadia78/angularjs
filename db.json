@@ -1,0 +1,44 @@
+{
+  "articles": [
+      {
+          "id": 1,
+          "title": "PHP",
+          "content": "PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage de programmation libre6, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP5, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet. ",
+          "email": "elephant@php.net",
+          "published": true,
+          "date": "2015-11-18T15:48:36.512Z"
+      },
+      {
+          "id": 2,
+          "title": "AngularJS",
+          "content": "AngularJS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement Apache Cordova, a framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller and model–view–viewmodel architectures, along with components commonly used in rich Internet applications. In 2014, the original AngularJS team began working on the Angular application platform.",
+          "email": "contact@angular.io",
+          "published": true,
+          "date": "2015-11-19T10:12:48.081Z"
+      },
+      {
+          "id": 4,
+          "title": "Golang",
+          "content": "Go veut faciliter et accélérer la programmation à grande échelle : en raison de sa simplicité il est donc concevable de l'utiliser aussi bien pour écrire des applications, des scripts ou de grands systèmes. Cette simplicité est nécessaire aussi pour assurer la maintenance et l'évolution des programmes sur plusieurs générations de développeurs. S'il vise aussi la rapidité d'exécution, indispensable à la programmation système, il considère le multithreading comme le moyen le plus robuste d'assurer sur les processeurs actuels cette rapidité8 tout en rendant la maintenance facile par séparation de tâches simples exécutées indépendamment afin d'éviter de créer des « usines à gaz ». Cette conception permet également le fonctionnement sans réécriture sur des architectures multi-cœurs en exploitant immédiatement l'augmentation de puissance correspondante. ",
+          "email": "gopher@golang.org",
+          "published": true,
+          "date": "2015-11-19T10:21:54.021Z"
+      },
+      {
+          "id": 5,
+          "title": "Rust",
+          "content": "Rust est un langage de programmation compilé multi-paradigme conçu et développé par Mozilla Research. Il a été conçu pour être « un langage sécurisé, concurrent, pratique », supportant les styles de programmation purement fonctionnel, modèle d'acteur, procédural et orienté objet.",
+          "email": "contact@rust-lang.org",
+          "published": true,
+          "date": "2015-11-19T13:10:35.954Z"
+      },
+      {
+          "id": 6,
+          "title": "Docker",
+          "content": "Le docker ou le débardeur est un ouvrier portuaire, travaillant dans les docks, employé au chargement et déchargement des navires arrivant au port.",
+          "email": "admin@docker.com",
+          "published": true,
+          "date": "2015-11-19T13:12:07.382Z"
+      }
+  ]
+}

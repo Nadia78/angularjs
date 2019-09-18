@@ -1,5 +1,7 @@
+'use strict';
+
 (function () {
-    angular.module('app-root', ['ngRoute'])
+    angular.module('app-root', ['ngRoute', 'app-blog'])
 
         .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
             $locationProvider.html5Mode(true);
